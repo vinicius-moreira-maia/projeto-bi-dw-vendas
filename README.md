@@ -39,7 +39,7 @@ Este curso também abrange a utilização de ferramentas de cubos OLAP (Analysis
 ## Data Mart (Arquitetura Snowflake)
 ![Modelo do dw](imagens_modelos/modelagem_DW.png)
 
-## Imagens do processo de ETL (Integration Services)
+## Imagens do processo de ETL (Integration Services) para a carga da dimensão Cliente
 
 ### 1. ETL completo para a carga da dimensão cliente, com organização dos fluxos em contêineres de sequência.
 ![imagem 1](imagens/carga_cliente.jpg)
@@ -50,7 +50,7 @@ Aqui foi feita uma transformação com o **componente de coluna derivada** para 
 
 ![imagem 2](imagens/carga_staging_cliente.jpg)
 
-### 3. Data Flow Task para o ETL do ambiente de staging para o data warehouse (data mart pra ser mais específico).
+### 3. Data Flow Task para o ETL do ambiente de staging para o data mart.
 
 Utilização do **componente de Slow Changing Dimension (SCD)** para armazenar o registro histórico das mudanças nos registros dos clientes. Para a correta configuração do componente, a dimensão possui uma **chave substituta** (que atua como se fosse a chave primária em dw's), a **chave do negócio** (chave primária do OLTP) e as **colunas fim e início**, para controlar a vigência do registro.
 
