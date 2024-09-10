@@ -26,7 +26,9 @@ Este curso também abrange a utilização de ferramentas de cubos OLAP (Analysis
 ## Ferramentas utilizadas
 
 **Bancos de dados (OLAP, OLTP e Staging)**: SQLServer 2017
+
 **ETL**: SQLServer Data Tools (SSDT) 2015, com foco no Integration Services
+
 **Modelagem de Banco de Dados**: https://dbdiagram.io/home 
 
 ## Área de staging
