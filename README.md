@@ -44,7 +44,7 @@ Este curso também abrange a utilização de ferramentas de cubos OLAP (Analysis
 
 ### 2. Data Flow Task para o ETL do ambiente OLTP para a área de staging.
 
-Aqui foi feita uma transformação com o **componente de coluna derivada** para criar uma coluna que concatena nome e sobrenome do cliente. Também foi realizado um **lookup** na tabela ENDERECO, pois a dimensão cliente precisa conter o endereço do cliente, e não há uma dimensão de endereço neste projeto. Para os casos em que não há interseção enre os dois conjuntos/tabelas, foi criado um fluxo alternativo em um Banco de Dados separado. Por fim, é realizada a **conversão dos tipos** de dados para padronizar tudo e evitar exceções.
+Aqui foi feita uma transformação com o **componente de coluna derivada** para criar uma coluna que concatena nome e sobrenome do cliente. Também foi realizado um **lookup** na tabela ENDERECO, pois a dimensão cliente precisa conter o endereço do cliente, e não há uma dimensão de endereço neste projeto. Para os casos em que não há interseção entre os dois conjuntos/tabelas, foi criado um fluxo alternativo em um Banco de Dados separado. Por fim, é realizada a **conversão dos tipos** de dados para padronizar tudo e evitar exceções.
 
 ![imagem 2](imagens/carga_staging_cliente.jpg)
 
