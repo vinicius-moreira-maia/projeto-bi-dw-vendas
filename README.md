@@ -7,9 +7,13 @@ Este projeto trata-se da situação hipotética de uma empresa do ramo de Vendas
 Os arquivos deste repositório são:
 
 **1.** Scripts DDL das áreas de staging e do dw. (DDL_DW.sql e DDL_STAGING.sql)
+
 **2.** Modelos lógicos (diagramas) das áreas de staging e do dw, com arquitetura Snowflake. (imagens_modelos)
+
 **3.** Script de consulta da tabela Categoria do OLTP, pois esta é normalizada com a dimensão Produto do dw. (DW_consulta_categoria.sql)
+
 **4.** Procedure que faz o tratamento dos dados de uma coluna de texto, convertendo os valores para CamelCase. (STG_function_ETL_CamelCase.sql)
+
 **5.** View do abiente OLTP que reflete a estrutura da tabela fato da área de staging. (STG_view_OLTP_fato.sql)
 
 **A pasta 'scripts_fornecidos' contém aqrquivos de autoria do professor**. Os demais arquivos foram desenvolvidos por mim, durante o acompanhamento das atividades.
