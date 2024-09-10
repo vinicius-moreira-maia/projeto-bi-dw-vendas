@@ -1,5 +1,7 @@
 # Projeto realizado no curso completo de BI do Felipe Mafra
 
+Link do curso: [Curso completo de BI](https://www.udemy.com/course/curso-completo-business-intelligence/?couponCode=OF83024E)
+
 Este projeto trata-se da situação hipotética de uma empresa do ramo de Vendas, onde o **escopo foi a criação dos ambientes OLTP, OLAP e staging, além dos pacotes ETL do Integration Services**.
 
 Os arquivos deste repositório são:
