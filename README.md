@@ -27,21 +27,21 @@ Este curso também abrange a utilização de ferramentas de cubos OLAP (Analysis
 ![Modelo de Staging](imagens_modelos/modelagem_STAGING.png)
 
 ## Data Mart (Arquitetura Snowflake)
-![Modelo de Staging](imagens_modelos/modelagem_DW.png)
+![Modelo do dw](imagens_modelos/modelagem_DW.png)
 
 ## Imagens do processo de ETL (Integration Services)
 
 ### 1. ETL completo para a carga da dimensão cliente, com organização dos fluxos em contêineres de sequência.
-![Modelo de Staging](imagens/carga_cliente.jpg)
+![imagem 1](imagens/carga_cliente.jpg)
 
 ### 2. Data Flow Task para o ETL do ambiente OLTP para a área de staging.
 
 Aqui foi feita uma transformação com o **componente de coluna derivada** para criar uma coluna que concatena nome e sobrenome do cliente. Também foi realizado um **lookup** na tabela ENDERECO, pois a dimensão cliente precisa conter o endereço do cliente, e não há uma dimensão de endereço neste projeto. Para os casos em que não há interseção enre os dois conjuntos/tabelas, foi criado um fluxo alternativo em um Banco de Dados separado. Por fim, é realizada a **conversão dos tipos** de dados para padronizar tudo e evitar exceções.
 
-![Modelo de Staging](imagens/carga_staging_cliente.jpg)
+![imagem 2](imagens/carga_staging_cliente.jpg)
 
 ### 3. Data Flow Task para o ETL do ambiente de staging para o data warehouse (data mart pra ser mais específico).
 
 Utilização do componente de Slow Changing Dimension (SCD) para armazenar o registro histórico das mudanças nos registros dos clientes. Para a correta configuração do componente, a dimensão possui uma chave substituta (que atua como se fosse a chave primária em dw's), a chave do negócio (chave primária do OLTP) e as colunas fim e início, para controlar a vigência do registro.
 
-![Modelo de Staging](imagens/carga_dw_cliente.jpg)
+![imagem 3](imagens/carga_dw_cliente.jpg)
