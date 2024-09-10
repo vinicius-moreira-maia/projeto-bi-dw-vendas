@@ -1,6 +1,7 @@
 -- Consulta utilizada na carga da dimensão categoria
 -- Já que esta dimensão é normalizada com outra dimensão, não há Slow Chaging Dimension aqui
 
+-- ela trás apenas os registros que tem na staging e que não não tem no dw
 SELECT 
 	cat_stage.IDCATEGORIA AS IDCATEGORIA,
 	cat_stage.NOME AS NOME
