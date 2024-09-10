@@ -16,10 +16,10 @@ Os arquivos deste repositório são:
 
 **5.** View do abiente OLTP que reflete a estrutura da tabela fato da área de staging. (STG_view_OLTP_fato.sql)
 
-**A pasta 'scripts_fornecidos' contém aqrquivos de autoria do professor**. Os demais arquivos foram desenvolvidos por mim, durante o acompanhamento das atividades.
+**A pasta 'scripts_fornecidos' contém arquivos de autoria do professor**. Os demais arquivos foram desenvolvidos por mim, durante o acompanhamento das atividades.
 
 Fiz este curso com a intenção de experienciar o desenvolvimento de um projeto de BI
-desde a análise dos requisitos até a modelagem e carga de um data mart (ambiente OLAP), passando também pela modelagem e carga do banco transacional (ambiente OLTP) e pela modelagem e carga de um banco de staging, para que os dados sejam persistidos em um ambiente que não o transacional, evitando assim a sobrecarga do banco de operação com as transformações necessárias. Para o fluxo de dados entre os bancos, foi utilizada a ferramenta de ETL Integration Services.
+desde a análise dos requisitos até a **modelagem e carga de um data mart (ambiente OLAP)**, passando também pela **modelagem e carga do banco transacional (ambiente OLTP)** e pela **modelagem e carga de um banco de staging**, para que os dados sejam persistidos em um ambiente que não o transacional, evitando assim a sobrecarga do banco de operação com as transformações necessárias. Para o fluxo de dados entre os bancos, foi utilizada a **ferramenta de ETL Integration Services**.
 
 Este curso também abrange a utilização de ferramentas de cubos OLAP (Analysis Services) e de relatórios (Reporting Services). No entanto, para otimizar o tempo dos meus estudos, optei por ir até a finalização da carga do data mart, pois hoje o que mais se vê no mercado é a utilização do Power BI direto com o data mart, sem a camada semântica fornecida pela ferramenta de cubos.
 
