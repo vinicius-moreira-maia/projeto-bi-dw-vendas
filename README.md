@@ -42,6 +42,6 @@ Aqui foi feita uma transformação com o **componente de coluna derivada** para 
 
 ### 3. Data Flow Task para o ETL do ambiente de staging para o data warehouse (data mart pra ser mais específico).
 
-Utilização do componente de Slow Changing Dimension (SCD) para armazenar o registro histórico das mudanças nos registros dos clientes. Para a correta configuração do componente, a dimensão possui uma chave substituta (que atua como se fosse a chave primária em dw's), a chave do negócio (chave primária do OLTP) e as colunas fim e início, para controlar a vigência do registro.
+Utilização do **componente de Slow Changing Dimension (SCD)** para armazenar o registro histórico das mudanças nos registros dos clientes. Para a correta configuração do componente, a dimensão possui uma **chave substituta** (que atua como se fosse a chave primária em dw's), a **chave do negócio** (chave primária do OLTP) e as **colunas fim e início**, para controlar a vigência do registro.
 
 ![imagem 3](imagens/carga_dw_cliente.jpg)
