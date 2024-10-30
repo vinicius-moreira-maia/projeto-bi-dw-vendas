@@ -73,7 +73,7 @@ CREATE TABLE ST_FATO(
 	IDFORMA INT DEFAULT NULL,
 	QUANTIDADE INT DEFAULT NULL, -- medida (somatório da quantidade de produtos vendidos)
 	TOTAL_ITEM NUMERIC(10,2) DEFAULT NULL, -- medida (somatório do preço dos produtos vendidos)
-	DATA DATE DEFAULT NULL, -- será a dimensão fato
+	DATA DATE DEFAULT NULL, -- será a dimensão tempo
 	CUSTO_TOTAL NUMERIC(10,2) DEFAULT NULL, -- medida (somatório do preço de custo dos produtos vendidos)
 	LUCRO_TOTAL NUMERIC(10,2) DEFAULT NULL -- medida (somatório do lucro das vendas, onde lucro = preco_venda - preco_custo)
 )
